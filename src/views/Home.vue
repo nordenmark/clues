@@ -2,15 +2,17 @@
   <div class="home">
     <h1>Hitta personerna</h1>
 
-    <p>Nedan finner du fyra ledtrådar. Varje ledtråd leder till förnamnet på en person. När du hittat de fyra förnamnen kan du gå vidare.</p>
+    <p>Det här är en liten klurighet där målet är att hitta förnamnen på fyra personer.</p>
 
-    <p>Tryck på en ledtråd för att börja.</p>
+    <p>Varje utmaning leder till ett förnamn. När du hittat de fyra förnamnen kan du gå vidare och gissa. Gissar du rätt så får du reda på vad det här handlar om.</p>
+
+    <p>Tryck på en utmaning för att börja.</p>
 
     <div class="clues">
       <div v-for="index in clues" :key="index" class="clue">
         <router-link
           :to="{ name: 'person', params: { id: index }}"
-        >Ledtråd {{ parseInt(index, 10) + 1 }}</router-link>
+        >Utmaning {{ parseInt(index, 10) + 1 }}</router-link>
       </div>
     </div>
 

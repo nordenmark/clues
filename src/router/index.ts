@@ -16,15 +16,14 @@ const routes = [
     path: '/answer',
     name: 'answer',
     // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
+    // this generates a separate chunk (answer.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/Answer.vue'),
+      import(/* webpackChunkName: "answer" */ '../views/Answer.vue'),
   },
 ];
 
 const router = new VueRouter({
-  mode: 'history',
   base: process.env.BASE_URL,
   routes,
 });

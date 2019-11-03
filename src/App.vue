@@ -23,9 +23,14 @@
   width: 90%;
   margin: 0 auto;
   padding-top: 30px;
+  font-size: 16px;
 }
 
+input {
+  font-size: 16px;
+}
 h1 {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   margin-bottom: 0.7em;
 }
 

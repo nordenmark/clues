@@ -7,19 +7,19 @@
     <form @submit.prevent="submit()">
       <p>
         <label>Namn 1</label>
-        <input required v-model="names[0]" placeholder="Namn från ledtråd 1" />
+        <input required v-model="names[0]" placeholder="Förnamn 1" />
       </p>
       <p>
         <label>Namn 2</label>
-        <input required v-model="names[1]" placeholder="Namn från ledtråd 2" />
+        <input required v-model="names[1]" placeholder="Förnamn 2" />
       </p>
       <p>
         <label>Namn 3</label>
-        <input required v-model="names[2]" placeholder="Namn från ledtråd 3" />
+        <input required v-model="names[2]" placeholder="Förnamn 3" />
       </p>
       <p>
         <label>Namn 4</label>
-        <input required v-model="names[3]" placeholder="Namn från ledtråd 4" />
+        <input required v-model="names[3]" placeholder="Förnamn 4" />
       </p>
       <p>
         <button type="submit">Gissa</button>
@@ -35,9 +35,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 export default class Answer extends Vue {
   names: string[] = [];
 
-  submit(): void {
-    console.log(this.names);
-  }
+  submit(): void {}
 }
 </script>
 
