@@ -29,6 +29,7 @@
 input {
   font-size: 16px;
 }
+
 h1 {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   margin-bottom: 0.7em;
@@ -37,12 +38,26 @@ h1 {
 a {
   color: #42b983;
   font-weight: bold;
+  &:hover {
+    color: darken(#42b983, 20%);
+  }
 }
+
 p {
   margin-bottom: 10px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+ol {
+  margin: 0;
+  padding-left: 30px;
+  text-align: left;
+  li {
+    margin-bottom: 8px;
+    padding-left: 12px;
   }
 }
 </style>

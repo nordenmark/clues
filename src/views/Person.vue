@@ -1,8 +1,14 @@
 <template>
   <div class="person">
     <h1>Ledtråd {{ number }}</h1>
+
     <router-link to="/" class="back">Tillbaka till ledtrådarna!</router-link>
-    {{ clue }}
+
+    <p class="intro" v-html="clue.introduction"></p>
+
+    <ol>
+      <li v-for="(step, index) in clue.steps" :key="index" v-html="step"></li>
+    </ol>
   </div>
 </template>
 
@@ -29,3 +35,18 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.back {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+
+.large {
+  font-size: 1.2em;
+}
+</style>

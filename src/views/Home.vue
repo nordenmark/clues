@@ -39,7 +39,11 @@ export default {
   .clue {
     margin-bottom: 10px;
     background-color: #42b983;
+    &:hover {
+      background-color: darken(#42b983, 20%);
+    }
     a {
+      text-decoration: none;
       color: white;
       padding: 10px;
       display: block;
