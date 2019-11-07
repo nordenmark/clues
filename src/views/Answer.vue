@@ -53,15 +53,11 @@ export default class Answer extends Vue {
     this.destination = '';
     this.results = [];
 
-    try {
-      const { destination, results } = await ApiService.guess(this.names);
-      this.destination = destination;
-      this.results = results;
-    } catch (e) {
-      console.error(e);
-    } finally {
-      this.isLoading = false;
-    }
+    const { destination, results } = await ApiService.guess(this.names);
+    this.destination = destination;
+    this.results = results;
+
+    this.isLoading = false;
   }
 
   isInvalid(index: number) {
