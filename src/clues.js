@@ -3,23 +3,24 @@ const clue1 = {
     'Den här utmaningen består av det klassiska "Wikipedia-spelet" som går ut på att klicka sig fram genom olika Wikipedia-artiklar för att nå ett visst slutmål. Följ stegen nedan och sista artikeln du hamnar på bör ge dig en hint om det förnamn som söks.',
   steps: [
     'Gå till Wikipedia-artikeln <a target="_blank" href="https://sv.wikipedia.org/wiki/Tyskland">Tyskland</a>',
-    'Vilken stad har ett invånarantal närmast 1 miljon?',
-    'Vilket förbundsland var nyskapat efter kriget?',
-    'Vad hände 21 januari 1947?',
-    'Du är nu framme och har hittat förnamn nummer 1, grattis!',
+    'Klicka på staden som har ett invånarantal närmast 1 miljon',
+    'Klicka på förbundslandet som var nyskapat efter kriget',
+    'Klicka på en länk i närheten av vad som hände 21 januari 1947',
+    'Du är nu framme och har hittat smeknamnet på person nummer 1, grattis! Du ska svara personens förnamn.',
   ],
 };
 
 const clue2 = {
   introduction:
-    'I den här utmaningen gäller det att hitta koordinater som sedan ska användas för att hamna rätt på Google Maps. Det eftersöks fyra olika värden (A, B, C och D). Hitta dessa fyra värden från ledtrådarna nedan.',
+    'I den här utmaningen gäller det att hitta koordinater som sedan ska användas för att hamna rätt på Google Maps. Det eftersöks fem olika värden (A, B, C, D och E). Hitta dessa fem värden från ledtrådarna nedan.',
   steps: [
     '<strong>A</strong>: (Max antal tänder hos en vuxen person) + 4',
     '<strong>B</strong>: DCCCXLVII',
     '<strong>C</strong>: (Summan av år, månad och dag i mitt personnummer) - 3',
     '<strong>D</strong>: Numret i titeln på en film om ett fordon av bröderna Flamholc',
+    '<strong>E</strong>: Så många är alla goda ting',
     'Gå till <a target="_blank" href="https://www.google.com/maps">Google Maps</a>',
-    'Sök efter koordinaterna på formen <br><span class="large">A<strong>.</strong>B, <strong>-</strong>C<strong>.</strong>D</span>',
+    'Sök efter koordinaterna på formen <br><span class="large">A<strong>.</strong>B, <strong>-</strong>C<strong>.</strong>DE</span> (obs. minus C)',
     'Titta efter ett förnamn som är skrivet på en byggnad i närheten på North Palm Avenue, använd gärna Street View',
   ],
 };
