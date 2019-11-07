@@ -50,10 +50,18 @@ export default class Answer extends Vue {
 
   async submit() {
     this.isLoading = true;
-    const { destination, results } = await ApiService.guess(this.names);
-    this.isLoading = false;
-    this.destination = destination;
-    this.results = results;
+    this.destination = '';
+    this.results = [];
+
+    try {
+      const { destination, results } = await ApiService.guess(this.names);
+      this.destination = destination;
+      this.results = results;
+    } catch (e) {
+      console.error(e);
+    } finally {
+      this.isLoading = false;
+    }
   }
 
   isInvalid(index: number) {
