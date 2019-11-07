@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 
 const url =
   process.env.NODE_ENV === 'development'
@@ -11,8 +11,31 @@ interface Response {
 }
 export class ApiService {
   static guess(names: string[]): Promise<Response> {
-    return axios.post<Response>(`${url}/guess`, { names }).then(response => {
-      return response.data;
-    });
+    const options = {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json;charset=UTF-8',
+      },
+      body: JSON.stringify({
+        names,
+      }),
+    };
+
+    return fetch(`${url}/guess`, options).then(response => response.json());
+
+    // return axios
+    //   .post<Response>(
+    //     `${url}/guess`,
+    //     { names },
+    //     {
+    //       headers: {
+    //         'Content-Type': 'application/json',
+    //       },
+    //     }
+    //   )
+    //   .then(response => {
+    //     return response.data;
+    //   });
   }
 }
