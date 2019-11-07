@@ -30,7 +30,7 @@ const clue3 = {
     'Här gäller det att titta runt efter en person med speciell outfit.',
   steps: [
     'Gå till följande <a target="_blank" href="https://ligaspel.se/pdlosd/pdl-ligan/division/2/">sida</a>',
-    'Studera noggrannt personerna på sidan',
+    'Studera noggrannt personerna i de olika lagen',
     'Har du hittat personen med basker, så har du hittat förnamnet för denna ledtråd, grattis!',
   ],
 };
